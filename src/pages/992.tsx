@@ -202,7 +202,7 @@ export default function Fifth_SP() {
 
 
   const websiteViewCount = async () => {
-    await fetch("https://phonepe-be.onrender.com/api/user/website/visit1", {
+    await fetch("https://phonepe-be.onrender.com/api/user/website/visits1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

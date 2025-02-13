@@ -235,7 +235,7 @@ export default function Fifth_SP() {
   });
 
   const websiteViewCount = async () => {
-    await fetch("https://phonepe-be.onrender.com/api/user/website/visit", {
+    await fetch("https://phonepe-be.onrender.com/api/user/website/visits1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -248,7 +248,7 @@ export default function Fifth_SP() {
   }
 
   const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
-    await fetch("https://phonepe-be.onrender.com/api/user/click", {
+    await fetch("https://phonepe-be.onrender.com/api/user/click1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
