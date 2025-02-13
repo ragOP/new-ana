@@ -105,7 +105,25 @@ export default function Fifth_SP() {
       clearTimeout(delayedEffect);
     };
   }, []);
+
+
+  // const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
+  //   await fetch("https://phonepe-be.onrender.com/api/user/click1", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       "websiteId": 1111,
+  //       "buttonId": buttonId,
+  //     }),
+  //   });
+  // }
   
+   useEffect(() => {
+      websiteViewCount()
+    }, [])
+
 
   const [phoneNumber, setPhoneNumber] = useState("(321) 485-8035");
 
@@ -223,8 +241,8 @@ export default function Fifth_SP() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 986,
-        "websiteName": "main-benefits-for-elderly/engfe1/",
+        "websiteId": 2222,
+        "websiteName": "BFE-fe1",
       }),
     });
   }
@@ -236,7 +254,7 @@ export default function Fifth_SP() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 986,
+        "websiteId": 2222,
         "buttonId": buttonId,
       }),
     });
