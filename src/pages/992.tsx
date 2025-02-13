@@ -202,26 +202,26 @@ export default function Fifth_SP() {
 
 
   const websiteViewCount = async () => {
-    await fetch("https://phonepe-be.onrender.com/api/user/website/visit", {
+    await fetch("https://phonepe-be.onrender.com/api/user/website/visit1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 101,
-        "websiteName": "benefits-for-elderly/engfe25k/",
+        "websiteId": 1111,
+        "websiteName": "BFE-engfe25k",
       }),
     });
   }
 
   const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
-    await fetch("https://phonepe-be.onrender.com/api/user/click", {
+    await fetch("https://phonepe-be.onrender.com/api/user/click1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 101,
+        "websiteId": 1111,
         "buttonId": buttonId,
       }),
     });
