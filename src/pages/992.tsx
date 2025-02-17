@@ -202,26 +202,26 @@ export default function Fifth_SP() {
 
 
   const websiteViewCount = async () => {
-    await fetch("https://phonepe-be.onrender.com/api/user/website/visits1", {
+    await fetch("https://anlyatical-dashboard.onrender.com/api/website", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 1111,
-        "websiteName": "BFE-engfe25k",
+        "websiteId": 101,
+        "websiteName": "benefitsforelderly.org/engfe25k",
       }),
     });
   }
 
   const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
-    await fetch("https://phonepe-be.onrender.com/api/user/click1", {
+    await fetch("https://anlyatical-dashboard.onrender.com/api/button", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 1111,
+        "websiteId": 101,
         "buttonId": buttonId,
       }),
     });
@@ -240,17 +240,17 @@ export default function Fifth_SP() {
 
     const sessionId = generateSessionId();
     async function endSession() {
-      const response = await axios.post('https://phonepe-be.onrender.com/api/user/session/end', { websiteId: 101, sessionId });
+      const response = await axios.post('https://anlyatical-dashboard.onrender.com/api/session/end', { websiteId: 101, sessionId });
       console.log('Session ended. Duration:', response.data.duration, 'seconds');
     }
 
     try {
       // Start the session
-      await axios.post('https://phonepe-be.onrender.com/api/user/session/start', { websiteId:101, sessionId });
+      await axios.post('https://anlyatical-dashboard.onrender.com/api/session/start', { websiteId:101, sessionId });
       console.log('Session started');
 
       // Record an interaction
-      await axios.post('https://phonepe-be.onrender.com/api/user/session/interaction', { websiteId:101, sessionId });
+      await axios.post('https://anlyatical-dashboard.onrender.com/api/session/interaction', { websiteId:101, sessionId });
       console.log('Interaction recorded');
 
       // End the session after 5 seconds

@@ -106,19 +106,6 @@ export default function Fifth_SP() {
     };
   }, []);
 
-
-  // const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
-  //   await fetch("https://phonepe-be.onrender.com/api/user/click1", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({
-  //       "websiteId": 1111,
-  //       "buttonId": buttonId,
-  //     }),
-  //   });
-  // }
   
    useEffect(() => {
       websiteViewCount()
@@ -235,26 +222,26 @@ export default function Fifth_SP() {
   });
 
   const websiteViewCount = async () => {
-    await fetch("https://phonepe-be.onrender.com/api/user/website/visits1", {
+    await fetch("https://anlyatical-dashboard.onrender.com/api/website", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 2222,
-        "websiteName": "BFE-fe1",
+        "websiteId": 100,
+        "websiteName": "benefitsforelderly.org/engfe1",
       }),
     });
   }
 
   const getButtonClick = async ({ buttonId }: { buttonId: number }) => {
-    await fetch("https://phonepe-be.onrender.com/api/user/click1", {
+    await fetch("https://anlyatical-dashboard.onrender.com/api/button", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "websiteId": 2222,
+        "websiteId": 100,
         "buttonId": buttonId,
       }),
     });
@@ -273,17 +260,17 @@ export default function Fifth_SP() {
 
     const sessionId = generateSessionId();
     async function endSession() {
-      const response = await axios.post('https://phonepe-be.onrender.com/api/user/session/end', { websiteId: 986, sessionId });
+      const response = await axios.post('https://anlyatical-dashboard.onrender.com/api/session/end', { websiteId: 100, sessionId });
       console.log('Session ended. Duration:', response.data.duration, 'seconds');
     }
 
     try {
       // Start the session
-      await axios.post('https://phonepe-be.onrender.com/api/user/session/start', { websiteId:986, sessionId });
+      await axios.post('https://anlyatical-dashboard.onrender.com/api/session/start', { websiteId:100, sessionId });
       console.log('Session started');
 
       // Record an interaction
-      await axios.post('https://phonepe-be.onrender.com/api/user/session/interaction', { websiteId:986, sessionId });
+      await axios.post('https://anlyatical-dashboard.onrender.com/api/session/interaction', { websiteId:100, sessionId });
       console.log('Interaction recorded');
 
       // End the session after 5 seconds
