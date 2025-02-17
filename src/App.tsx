@@ -36,6 +36,7 @@ import Chat2 from './pages/Chat2'
 import Test2 from './pages/Test2'
 import Sur from './pages/Sur'
 import Sureng from './pages/Sureng'
+import Call from './pages/Call'
 function App() {
  console.log('s');
   return (
@@ -47,6 +48,7 @@ function App() {
        
              <Route path = "/engfe1" element = {<S />} />
              <Route path = "/test" element = {<Test2 />} />
+             <Route path='/call' element={<Call />} />
              <Route path = "/engfe25k" element = {<SE />} />
              <Route path = "/engchat1" element = {<Chat/>} />
              <Route path = "/engchat25k" element = {<Chat2 />} />
