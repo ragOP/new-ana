@@ -46,7 +46,7 @@ function App() {
         <Routes>
           {/* c */}
        
-             <Route path = "/engfe1" element = {<S />} />
+             {/*<Route path = "/engfe1" element = {<S />} />
              <Route path = "/test" element = {<Test2 />} />
              <Route path='/call' element={<Call />} />
              <Route path = "/engfe25k" element = {<SE />} />
@@ -58,7 +58,7 @@ function App() {
              <Route path = "/fefb1" element = {<Newp />} />
              <Route path = "/bf1" element = {<Km />} />
              <Route path = "/km-engfe1" element = {<Hell />} />
-             <Route path = "/spanfe1" element = {<Sur />} />
+             <Route path = "/spanfe1" element = {<Sur />} />*/}
              <Route path = "/engfb" element = {<Sureng />} />
           
           {/* <Route path = "/a" element = {<S />} /> */}
