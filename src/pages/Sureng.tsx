@@ -387,7 +387,7 @@ Simply answer the questions below and claim your benefit while you still can!
           <div className="spots-count">Spot Remaining: 4</div>
           <a href="tel:+16142658802">
       <div className="call-btn" onClick={handleCall}>
-        CALL (1614)-265-8802  
+        CALL  +1 (614)-265-8802  
       </div>
     </a>
           <div className="sub-description">
