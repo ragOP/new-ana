@@ -385,7 +385,7 @@ Simply answer the questions below and claim your benefit while you still can!
             <b>Make A Quick Call </b> To Claim Your Final Allowance Benefit Worth Upto $40,000!
           </div>
           <div className="spots-count">Spot Remaining: 4</div>
-          <a href="+16142658802">
+          <a href="tel:+16142658802">
       <div className="call-btn" onClick={handleCall}>
         CALL (1614)-265-8802  
       </div>
