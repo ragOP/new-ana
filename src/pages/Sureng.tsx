@@ -109,20 +109,20 @@ export default function Fifth_SP() {
 
   const [phoneNumber, setPhoneNumber] = useState("(321) 485-8035");
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search.toLowerCase());
-    const gclid = params.get("gclid");
-    const wbraid = params.get("wbraid");
-    const gbraid = params.get("gbraid");
-    const newsbreak_cid=params.get("newsbreak_cid");
+  // useEffect(() => {
+  //   const params = new URLSearchParams(window.location.search.toLowerCase());
+  //   const gclid = params.get("gclid");
+  //   const wbraid = params.get("wbraid");
+  //   const gbraid = params.get("gbraid");
+  //   const newsbreak_cid=params.get("newsbreak_cid");
 
-    if (gclid || wbraid || gbraid || newsbreak_cid) {
+  //   if (gclid || wbraid || gbraid || newsbreak_cid) {
     
-    }
-    else{
-      setPhoneNumber("314-234-1234");
-    }
-  }, []);
+  //   }
+  //   else{
+  //     setPhoneNumber("314-234-1234");
+  //   }
+  // }, []);
   useEffect(() => {
     window.document.title = "Benefits For Elderly";
 
@@ -132,7 +132,7 @@ export default function Fifth_SP() {
   }, []);
 
   const handleCall = () => {
-    getButtonClick({ buttonId: 5 })
+    // getButtonClick({ buttonId: 5 })
   };
 
   const [quiz, setQuiz] = useState("1. Are you over 50?");
